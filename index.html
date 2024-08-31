@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      p {
+        font-family: "Montserrat";
+      }
+      h1 {
+        font-family: "Fraunces";
+      }
+    </style>
+    <title>Frontend Mentor | Product preview card component</title>
+  </head>
+  <body class="bg-[#F2EAE2] min-h-screen flex justify-center items-center">
+    <div
+      class="flex flex-col rounded-t-2xl md:flex-row m-8 bg-white pb-6 md:p-0 rounded-b-2xl md:w-[600px] md:h-[450] md:rounded-l-2xl"
+    >
+      <div class="">
+        <img
+          src="images/image-product-mobile.jpg"
+          class="rounded-t-2xl md:hidden"
+          alt=""
+        />
+        <img
+          src="images/image-product-desktop.jpg"
+          alt=""
+          class="md:rounded-l-2xl hidden md:block"
+        />
+      </div>
+      <div class="flex flex-col">
+        <div class="flex flex-col items-start p-8 gap-y-4">
+          <p class="text-[#6C7289] text-xs">Perfume</p>
+          <h1 class="text-[#1C232B] text-[32px] font-bold leading-7">
+            Gabrielle Essence Eau De Parfum
+          </h1>
+          <p class="text-[13px] text-[#6C7289]">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+        </div>
+        <div class="flex justify-between px-8 items-center pb-6">
+          <h1 class="text-[#3D8168] text-[32px] font-bold">$149.99</h1>
+          <p class="text-[#6C7289] text-[13px]">$169.99</p>
+        </div>
+        <button
+          class="w-[295px] h-[48px] hover:bg-[#1C232B] bg-[#3D8168] rounded-xl self-center text-sm font-bold text-white flex flex-row justify-center items-center gap-x-3"
+        >
+          <img src="images/icon-cart.svg" alt="" />Add to Cart
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
